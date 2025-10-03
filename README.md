@@ -1,6 +1,15 @@
 # BattleGame - Dragonic Battle
 
+![Python](https://img.shields.io/badge/Python-3.x-3776AB?logo=python&logoColor=white)
+![Game](https://img.shields.io/badge/Type-RPG%20Game-green)
+![License](https://img.shields.io/badge/license-MIT-blue)
+![Status](https://img.shields.io/badge/status-active-success)
+
 A turn-based console RPG battle game where players choose from different character races to fight against a powerful dragon enemy.
+
+## Screenshots
+
+> **Note:** Console gameplay screenshots will be added soon. Run `python battlagame.py` to experience the battle system.
 
 ## Overview
 
@@ -27,10 +36,17 @@ Choose from four distinct character races:
 - **Exit functionality**: Clean exit available at any prompt
 - **Input validation**: Error handling for invalid selections
 
-## Requirements
+## Prerequisites
 
-- Python 3.x
-- No external dependencies (uses only Python standard library)
+- **Python**: version 3.6 or higher ([Download](https://www.python.org/downloads/))
+- **No external dependencies** - uses only Python standard library
+
+To check your Python version:
+```bash
+python --version
+# or
+python3 --version
+```
 
 ## Usage
 
@@ -110,8 +126,59 @@ Potential improvements could include:
 - Save/load game functionality
 - Graphical user interface
 
-## Author
+## Troubleshooting
 
-José Santiago Echevarria
-Created: May 13, 2023
-Python Fundamentals Assignment
+### Common Issues
+
+**Issue:** `python: command not found`
+
+**Solution:** Install Python 3 from [python.org](https://www.python.org/downloads/) or use `python3 battlagame.py` instead.
+
+---
+
+**Issue:** Game exits immediately without starting
+
+**Solution:** Ensure you're running the correct file and that Python is properly installed. Check the file hasn't been modified.
+
+---
+
+**Issue:** Invalid character selection keeps looping
+
+**Solution:** Enter a valid number (1-4) or character name exactly as shown (wizard, elf, human, orc). Input is case-sensitive.
+
+---
+
+**Issue:** Battle seems unbalanced
+
+**Solution:** This is intentional game design:
+- Wizard: High risk (dies fast) but can win quickly
+- Human: Tank build (survives longer) but slow victory
+- Elf/Orc: Balanced options for new players
+
+For additional help, please open an issue in the repository issue tracker.
+
+## Contributing
+
+Contributions are welcome! Please follow these steps:
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/YourFeature`)
+3. Commit your changes (`git commit -m 'Add YourFeature'`)
+4. Push to the branch (`git push origin feature/YourFeature`)
+5. Open a Pull Request
+
+### Enhancement Ideas
+- Add multiple enemy types with different stats
+- Implement special abilities for each race
+- Add equipment system (weapons, armor)
+- Create difficulty levels
+- Add save/load game functionality
+- Build a GUI version with graphics
+
+## Contact & Support
+
+- **Author**: José Santiago Echevarria
+- **Created**: May 13, 2023
+- **Issues**: Please report bugs via the repository issue tracker
+- **Educational Context**: Python Fundamentals Week 1 Assignment
+- **Learning Focus**: Variables, conditionals, loops, user input handling
